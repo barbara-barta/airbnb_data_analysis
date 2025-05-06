@@ -20,3 +20,5 @@ So far, the following steps have been done.
 </div>
 
 Therefore we run the non-parametric version of this test, the Kruskal-Wallis test. The outcome is a rejection of the null hypothesis, suggesting (as expected) that the neighbourhood is a factor in the listing's price.
+
+I am currently working on the project and expect to update it soon. Future plans include determining more factors relevant to the price, such as amenities and reviews. 
