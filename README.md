@@ -6,7 +6,9 @@ So far, the following steps have been done.
 
 1) Obtaining the Airbnb data using an API, and performing exploratory data exploration through numerical and graphical summaries
 2) Data cleaning: removing rows with missing price, identifying columns with a lot of missing data and the exact missing data mechanism: MAR, MCAR and MNAR, etc.
-3) Obtaining the neighbourhood of each listing (to study if the neighbourhood is a factor in price):  I first looked at the neighbourhood the host reported, but this input was unreliable (many missing or useless datapoints). Therefore I used reverse geocoding on the latitude and longitude data to obtain an address. To this end, I first tried working with an API, but this proved too time-consuming. So I dowloaded the geometry data of the nine districts of Amsterdam from the website of Gemeente Amsterdam, and used a spatial join in GeoPandas. This results in the following graph.
+3) Obtaining the neighbourhood of each listing (to study if the neighbourhood is a factor in price):
+   
+I first looked at the neighbourhood the host reported, but this input was unreliable (many missing or useless datapoints). Therefore I used reverse geocoding on the latitude and longitude data to obtain an address. To this end, I first tried working with an API, but this proved too time-consuming. So I dowloaded the geometry data of the nine districts of Amsterdam from the website of Gemeente Amsterdam, and used a spatial join in GeoPandas. Because the Geemente uses a projection on their coordinates, I had to convert the coordinates into the standard WGS84 reference system. This results in the following graph.
 
 <div align="center">
 <img src = "https://github.com/user-attachments/assets/21ac0191-9e59-4b18-8e6e-89b82cf093c4" width = "500">
